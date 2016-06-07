@@ -1,0 +1,69 @@
+Choix n°1 : http://www.csszengarden.com/200/
+
+Le thème est bien cohérent entre les images des fond et les textes.
+J'aime bien le pont qui relie la section principale et le aside
+et il y a à chaque fois un lien qui relie les éléments.
+La typo est simple et remplis biens son rôle quoique
+j'aurai mis Helvetica avant Arial dans la font-stack.
+C'est dommage que les titres soyent des images car on ne peut
+pas les séléctionner. Et les liens bleu sur fond bleu ne sont
+pas super lisibles.
+
+
+
+Choix n°2 : http://www.csszengarden.com/122/
+
+La section principale est asser étroite, ça change un peu.
+J'aime surtout le aside avec ses éléments alignés à droite et
+ses titres un peu effacés mais quand même bien visibles.
+Je n'aime pas trop le choix de typo pour les titres de la section principale.
+
+
+
+Choix n°3 : http://www.csszengarden.com/105/
+
+J'aime bien le style lettre tapée a la machine à écrire, la typo est 
+bien choisie pour ce thème. Une fois le aside terminer, les articles de
+la section principale reprennent, graduellement, la place libre. Ca brise la
+monotonie en variant les longueurs de lignes. Il y a un contraste entre
+la droiture et le style bien carré d'une lettre tapée à la machine avec
+la forme des pages qui sont coupées de travers et les titres sous forme
+de postits avec des formes variables.
+
+
+
+
+Mon thème : Surf (liberté, espace, calme, océan)
+
+
+
+Inspiration n°1 : http://www.belletro.com/
+
+Transparence avec l'image de fond, blocs de tailles différentes, la police
+sur les menus "Our factory", "Our working", "Our history" (avenida-w01).
+
+
+
+Inspiration n°2 : http://www.geekpad.ch/
+
+Le fait que dans une fenêtre plus étroite les menus sur les côtés sont
+cachés derrière des bouttons (Flèches bleue et orange).
+
+
+
+Inspiration n°3 : https://css-tricks.com/
+
+Le focus sur les liens du menu qui change le border-bottom ainsi que le petit carré
+sous la section visitée (orange pour "Blog").
+La police du texte de labeur ("Source Sans Pro").
+
+
+
+
+
+#00ACBF
+#00737F
+#00E6FF
+#003940
+#00CFE5
+

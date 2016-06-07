@@ -1,0 +1,391 @@
+/* Eric Meyer's CSS reset */
+
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* End reset */
+
+
+/* Styles */
+
+@font-face {
+    font-family: 'AvenidaW01';
+    src: url('../font/avenida/AvenidaW01.eot');
+    src: url('../font/avenida/AvenidaW01.eot?#iefix') format('embedded-opentype'),
+         url('../font/avenida/AvenidaW01.woff2') format('woff2'),
+         url('../font/avenida/AvenidaW01.woff') format('woff'),
+         url('../font/avenida/AvenidaW01.ttf') format('truetype'),
+         url('../font/avenida/AvenidaW01.svg#AvenidaW01') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+body{
+	font: 16px/1.4 "Source Sans Pro", Helvetica, Arial, sans-serif;
+	color: #fff;
+	background: url('../img/banner.jpg') repeat-x left top,
+	#00707E;
+	min-width: 600px;
+	max-width: 1400px;
+	margin: 0 auto;
+}
+.intro header{
+	margin: 80px 80px 0 80px;
+	padding: 1.5em;
+	background-color: #ffdeaa;
+	color: #512715;
+	display: inline-block;
+	border-radius: 20px 20px 20px 0;
+	-moz-box-shadow: 0 0 50px -10px #512715,
+	0px 20px 90px 10px #d2b88e inset;
+	-webkit-box-shadow: 0 0 50px -10px #512715,
+	0px 20px 90px 10px #d2b88e inset;
+	box-shadow: 0 0 50px -10px #512715,
+	0px 20px 90px 10px #d2b88e inset;
+	position: relative;   /* Because .summary has a position value, if header haven't anyone, z-index doesn't work */
+	z-index: 2;
+}
+.intro::before{
+	content: url('../img/palmtrees.png');
+	position: absolute;
+	top: 30px;
+	left: 30em;
+}
+.summary{
+	text-align: left;
+	width: 10em;
+	position: absolute;
+	top: 15.25em;
+	left: 80px;
+	padding: 1.5em;
+	background-color: #fee8c4;
+	color: #512715;
+	display: inline-block;
+	border-radius: 0 0 20px 20px;
+	-moz-box-shadow: 0 0 50px -10px #512715,
+	0px -20px 90px 10px #d2b88e inset;
+	-webkit-box-shadow: 0 0 50px -10px #512715,
+	0px -20px 90px 10px #d2b88e inset;
+	box-shadow: 0 0 50px -10px #512715,
+	0px -20px 90px 10px #d2b88e inset;
+	z-index: 1;
+}
+.summary a{
+	color: #00707E;
+}
+h1, h2, h3{
+	font-family: "AvenidaW01", Arial, sans-serif;
+}
+h1{
+	font-size: 6em;
+	line-height: 0.9em;
+}
+h2{
+	font-size: 3em;
+	line-height: 0.9em;
+}
+h3{
+	font-size: 2.5em;
+	line-height: 1em;
+	padding-bottom: 0.5em;
+	text-align: left;
+}
+a{
+	text-decoration: none;
+	color: #00E6FF;
+}
+.preamble, .explanation, .participation, .benefits, .requirements{
+	margin-bottom: 7em;
+	max-width: 40rem;
+	text-shadow: 2px 2px 2px #00707E;
+	margin-right: 19.5em;
+}
+.supporting{
+	margin-bottom: 2rem;
+	margin-right: 23em;
+	margin-left: 80px;
+}
+.supporting div:nth-child(2n){
+	margin-left: 17.5em;  /* 23em - 3.5 */
+	margin-right: 0;
+}
+.preamble{
+	margin-left: 23em;
+	margin-right: 23em;
+	margin-top: 7em;
+}
+.preamble h3{
+	position: relative;
+	display: inline;
+	margin-right: 120px;
+
+}
+.preamble h3:after{
+	content: url('../img/van.png');
+	display: inline-block;
+	position: absolute;
+	bottom: 0.2em;
+	right: -120px;
+}
+.preamble p:first-of-type {
+	padding-top: 1.25rem;
+}
+.explanation h3{
+	position: relative;
+	display: inline-block;
+	margin-left: 70px;
+
+}
+.explanation h3:before{
+	content: url('../img/surfing.svg');
+	width: 100px;
+	display: inline-block;
+	position: absolute;
+	bottom: 0.2em;
+	left: -70px;
+}
+.participation h3{
+	position: relative;
+	display: inline;
+	margin-right: 140px;
+
+}
+.participation h3:after{
+	content: url('../img/shark.svg');
+	width: 140px;
+	display: inline-block;
+	position: absolute;
+	bottom: -0.1em;
+	right: -140px;
+}
+.participation p:first-of-type {
+	padding-top: 1.25rem;
+}
+.benefits h3{
+	position: relative;
+	display: inline-block;
+	margin-left: 160px;
+
+}
+.benefits h3:before{
+	content: url('../img/orca.svg');
+	width: 150px;
+	display: inline-block;
+	position: absolute;
+	bottom: 0;
+	left: -160px;
+}
+.requirements h3{
+	position: relative;
+	display: inline;
+	margin-right: 180px;
+
+}
+.requirements h3:after{
+	content: url('../img/sailing.svg');
+	width: 160px;
+	display: inline-block;
+	position: absolute;
+	bottom: 0.5em;
+	right: -180px;
+}
+.requirements p:first-of-type {
+	padding-top: 1.25rem;
+}
+.sidebar{
+	margin: 0 80px;
+	position: absolute;
+	top: 23em;
+	right: 0;
+	text-align: right;
+	text-shadow: 2px 2px 2px #00707E;
+}
+.design-name{
+	display: block;
+}
+.designer-name{
+	border-bottom: 1px solid #00E6FF;
+}
+.design-selection, .design-archives, .zen-resources{
+	width: 13rem;
+	margin-bottom: 2.5em;
+}
+.design-selection nav li{
+	margin-bottom: 0.4em;
+}
+.page-wrapper{
+	position: relative;
+}
+footer{
+	text-align: center;
+	position: absolute;
+	left: 0;
+	width: 100%;
+	margin-bottom: 5rem;
+}
+footer a:not(:first-child){
+	padding-left: 1em;
+}
+abbr{
+	border-bottom: 1px dotted #00E6FF;
+}
+a abbr, h2 abbr{
+	border-bottom: none;
+}
+@media(max-width: 1090px){
+	.sidebar{
+		position: relative;
+		top: 0;
+		text-align: left;
+	}
+	.preamble{
+		margin-right: 80px;
+	}
+	.supporting{
+		margin-bottom: 0;
+		margin-right: 80px;
+	}
+	.design-selection{
+		width: 50%;
+	}
+	.design-archives, .zen-resources{
+		width: 20%;
+	}
+	.design-selection, .design-archives, .zen-resources{
+		float: left;
+	}
+	.sidebar .wrapper:after {
+		content: "";
+		display: block;
+		clear: both;
+		visibility: hidden;
+	}
+	.design-selection, .design-archives{
+		margin-right: 5%;
+	}
+	.design-selection nav{
+		-webkit-columns: 2;
+		-moz-columns: 2;
+		columns: 2;
+	}
+	body{
+		position: relative;
+		padding-bottom: 80px;
+	}
+	.page-wrapper{
+		position: inherit;
+	}
+	footer{
+		bottom: -10rem;
+	}
+}
+@media(max-width: 900px){
+	.zen-resources{
+		float: none;
+	}
+	.sidebar{
+		left: 15%;
+		margin: 0 0;
+	}
+}
+@media(max-width: 720px){
+	.page-wrapper{
+		margin: 10%;
+	}
+	.intro::before{
+		display: none;
+	}
+	.intro header{
+		text-align: center;
+		margin: 0 auto;
+		display: block;
+		border-radius: 20px 20px 20px 20px;
+	}
+	.summary {
+		width: auto;
+		text-align: left;
+		position: inherit;
+		top: auto;
+		left: auto;
+		margin: 0 2em;
+	}
+	.supporting{
+		margin: 0;
+	}
+	.preamble, .explanation, .participation, .benefits, .requirements{
+		margin-left: auto;
+		margin-right: auto;
+	}
+	.supporting div:nth-child(2n){
+		margin-left: auto;
+		margin-right: auto;
+	}
+	.sidebar{
+		text-align: center;
+		left: 0;
+	}
+	.design-selection{
+		float: none;
+		margin-left: auto;
+		margin-right: auto;
+		max-width: 25em;
+		padding-left: 2.5rem;
+	}
+	.design-selection, .design-archives, .zen-resources{
+		width: auto;
+		text-align: left;
+	}
+	.design-archives, .zen-resources{
+		float: none;
+		display: inline-block;
+		vertical-align: top;
+	}
+	.design-archives{
+		margin-right: 6rem;
+	}
+}
