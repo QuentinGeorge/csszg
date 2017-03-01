@@ -1,0 +1,18 @@
+// Global fonts variables
+
+// Variables
+$sourceSansProStack: "Source Sans Pro", Helvetica, Arial, sans-serif;
+$avenidaStack: "AvenidaW01", Arial, sans-serif;
+
+// Avenida
+@font-face {
+    font-family: 'AvenidaW01';
+    src: url('#{ $fontPath }avenida/AvenidaW01.eot');
+    src: url('#{ $fontPath }avenida/AvenidaW01.eot?#iefix') format('embedded-opentype'),
+         url('#{ $fontPath }avenida/AvenidaW01.woff2') format('woff2'),
+         url('#{ $fontPath }avenida/AvenidaW01.woff') format('woff'),
+         url('#{ $fontPath }avenida/AvenidaW01.ttf') format('truetype'),
+         url('#{ $fontPath }avenida/AvenidaW01.svg#AvenidaW01') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}

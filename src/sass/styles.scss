@@ -1,75 +1,32 @@
-/* Eric Meyer's CSS reset */
+// Settings: Global Variables
+@import "settings/paths";
+@import "settings/fonts";
+@import "settings/colors";
+@import "settings/sizes";
 
-/* http://meyerweb.com/eric/tools/css/reset/
-   v2.0 | 20110126
-   License: none (public domain)
-*/
+// Tools: Global mixins, functions & tools
+@import "tools/mixins";
 
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
-}
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section {
-	display: block;
-}
-body {
-	line-height: 1;
-}
-ol, ul {
-	list-style: none;
-}
-blockquote, q {
-	quotes: none;
-}
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
-}
-table {
-	border-collapse: collapse;
-	border-spacing: 0;
-}
+// Generic: Reset styles, normalize, ...
+@import "generic/meyer-reset";
 
-/* End reset */
+// Base: Default styling from the browser
+// @import "base/elements";
+
+// Objects: Undecorated design patterns for global elements
+// @import "objects/structure";
+
+// Components: Specific UI components
+// @import "components/header";
+
+// Trumps: Utilities classes with ability to override anything
+@import "trumps/utils";
 
 
-/* Styles */
-
-@font-face {
-    font-family: 'AvenidaW01';
-    src: url('../font/avenida/AvenidaW01.eot');
-    src: url('../font/avenida/AvenidaW01.eot?#iefix') format('embedded-opentype'),
-         url('../font/avenida/AvenidaW01.woff2') format('woff2'),
-         url('../font/avenida/AvenidaW01.woff') format('woff'),
-         url('../font/avenida/AvenidaW01.ttf') format('truetype'),
-         url('../font/avenida/AvenidaW01.svg#AvenidaW01') format('svg');
-    font-weight: normal;
-    font-style: normal;
-}
 body{
-	font: 16px/1.4 "Source Sans Pro", Helvetica, Arial, sans-serif;
+	font: 16px/1.4 $sourceSansProStack;
 	color: #fff;
-	background: url('../img/banner.jpg') repeat-x left top,
-	#00707E;
+	background: url('#{ $imgPath }banner.jpg') repeat-x left top, #00707E;
 	min-width: 600px;
 	max-width: 1400px;
 	margin: 0 auto;
@@ -91,7 +48,7 @@ body{
 	z-index: 2;
 }
 .intro::before{
-	content: url('../img/palmtrees.png');
+	content: url('#{ $imgPath }palmtrees.png');
 	position: absolute;
 	top: 30px;
 	left: 30em;
@@ -119,7 +76,7 @@ body{
 	color: #00707E;
 }
 h1, h2, h3{
-	font-family: "AvenidaW01", Arial, sans-serif;
+	font-family: $avenidaStack;
 }
 h1{
 	font-size: 6em;
@@ -166,7 +123,7 @@ a{
 
 }
 .preamble h3:after{
-	content: url('../img/van.png');
+	content: url('#{ $imgPath }van.png');
 	display: inline-block;
 	position: absolute;
 	bottom: 0.2em;
@@ -182,7 +139,7 @@ a{
 
 }
 .explanation h3:before{
-	content: url('../img/surfing.svg');
+	content: url('#{ $imgPath }surfing.svg');
 	width: 100px;
 	display: inline-block;
 	position: absolute;
@@ -196,7 +153,7 @@ a{
 
 }
 .participation h3:after{
-	content: url('../img/shark.svg');
+	content: url('#{ $imgPath }shark.svg');
 	width: 140px;
 	display: inline-block;
 	position: absolute;
@@ -213,7 +170,7 @@ a{
 
 }
 .benefits h3:before{
-	content: url('../img/orca.svg');
+	content: url('#{ $imgPath }orca.svg');
 	width: 150px;
 	display: inline-block;
 	position: absolute;
@@ -227,7 +184,7 @@ a{
 
 }
 .requirements h3:after{
-	content: url('../img/sailing.svg');
+	content: url('#{ $imgPath }sailing.svg');
 	width: 160px;
 	display: inline-block;
 	position: absolute;
