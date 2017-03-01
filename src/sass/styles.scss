@@ -11,10 +11,10 @@
 @import "generic/meyer-reset";
 
 // Base: Default styling from the browser
-// @import "base/elements";
+@import "base/elements";
 
 // Objects: Undecorated design patterns for global elements
-// @import "objects/structure";
+@import "objects/structure";
 
 // Components: Specific UI components
 // @import "components/header";
@@ -23,27 +23,15 @@
 @import "trumps/utils";
 
 
-body{
-	font: 16px/1.4 $sourceSansProStack;
-	color: #fff;
-	background: url('#{ $imgPath }banner.jpg') repeat-x left top, #00707E;
-	min-width: 600px;
-	max-width: 1400px;
-	margin: 0 auto;
-}
 .intro header{
 	margin: 80px 80px 0 80px;
 	padding: 1.5em;
-	background-color: #ffdeaa;
-	color: #512715;
+	background-color: $cHeaderBackground;
+	color: $cHeaderTexte;
 	display: inline-block;
 	border-radius: 20px 20px 20px 0;
-	-moz-box-shadow: 0 0 50px -10px #512715,
-	0px 20px 90px 10px #d2b88e inset;
-	-webkit-box-shadow: 0 0 50px -10px #512715,
-	0px 20px 90px 10px #d2b88e inset;
-	box-shadow: 0 0 50px -10px #512715,
-	0px 20px 90px 10px #d2b88e inset;
+	box-shadow: 0 0 50px -10px $cHeaderTexte,
+	0px 20px 90px 10px $cHeaderShadow inset;
 	position: relative;   /* Because .summary has a position value, if header haven't anyone, z-index doesn't work */
 	z-index: 2;
 }
@@ -60,20 +48,16 @@ body{
 	top: 15.25em;
 	left: 80px;
 	padding: 1.5em;
-	background-color: #fee8c4;
-	color: #512715;
+	background-color: $cSummaryBackground;
+	color: $cHeaderTexte;
 	display: inline-block;
 	border-radius: 0 0 20px 20px;
-	-moz-box-shadow: 0 0 50px -10px #512715,
-	0px -20px 90px 10px #d2b88e inset;
-	-webkit-box-shadow: 0 0 50px -10px #512715,
-	0px -20px 90px 10px #d2b88e inset;
-	box-shadow: 0 0 50px -10px #512715,
-	0px -20px 90px 10px #d2b88e inset;
+	box-shadow: 0 0 50px -10px $cHeaderTexte,
+	0px -20px 90px 10px $cHeaderShadow inset;
 	z-index: 1;
 }
 .summary a{
-	color: #00707E;
+	color: $cMainBackground;
 }
 h1, h2, h3{
 	font-family: $avenidaStack;
@@ -92,14 +76,10 @@ h3{
 	padding-bottom: 0.5em;
 	text-align: left;
 }
-a{
-	text-decoration: none;
-	color: #00E6FF;
-}
 .preamble, .explanation, .participation, .benefits, .requirements{
 	margin-bottom: 7em;
 	max-width: 40rem;
-	text-shadow: 2px 2px 2px #00707E;
+	text-shadow: 2px 2px 2px $cMainBackground;
 	margin-right: 19.5em;
 }
 .supporting{
@@ -200,13 +180,13 @@ a{
 	top: 23em;
 	right: 0;
 	text-align: right;
-	text-shadow: 2px 2px 2px #00707E;
+	text-shadow: 2px 2px 2px $cMainBackground;
 }
 .design-name{
 	display: block;
 }
 .designer-name{
-	border-bottom: 1px solid #00E6FF;
+	border-bottom: 1px solid $cLink;
 }
 .design-selection, .design-archives, .zen-resources{
 	width: 13rem;
@@ -229,12 +209,12 @@ footer a:not(:first-child){
 	padding-left: 1em;
 }
 abbr{
-	border-bottom: 1px dotted #00E6FF;
+	border-bottom: 1px dotted $cLink;
 }
 a abbr, h2 abbr{
 	border-bottom: none;
 }
-@media(max-width: 1090px){
+@media(max-width: $mFirstReduce){
 	.sidebar{
 		position: relative;
 		top: 0;
@@ -266,8 +246,6 @@ a abbr, h2 abbr{
 		margin-right: 5%;
 	}
 	.design-selection nav{
-		-webkit-columns: 2;
-		-moz-columns: 2;
 		columns: 2;
 	}
 	body{
@@ -281,7 +259,7 @@ a abbr, h2 abbr{
 		bottom: -10rem;
 	}
 }
-@media(max-width: 900px){
+@media(max-width: $mSecondReduce){
 	.zen-resources{
 		float: none;
 	}
@@ -290,7 +268,7 @@ a abbr, h2 abbr{
 		margin: 0 0;
 	}
 }
-@media(max-width: 720px){
+@media(max-width: $mThirdReduce){
 	.page-wrapper{
 		margin: 10%;
 	}

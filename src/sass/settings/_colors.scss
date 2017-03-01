@@ -1,11 +1,18 @@
 // Global colors variables
 
 // Backgrounds colors
+$cMainBackground: #00707E;
+$cHeaderBackground: #FFDEAA;
+$cSummaryBackground: lighten($cHeaderBackground, 5%);
 
 // Texts colors
+$cLaborText: #FFFFFF;
+$cHeaderTexte: #512715;
+$cLink: #00E6FF;
 
 // Borders colors
 
 // Shadows colors
+$cHeaderShadow: #D2B88E;
 
 // Others colors

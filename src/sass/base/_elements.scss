@@ -1,0 +1,15 @@
+// Styles base elements
+
+body{
+	font: 16px/1.4 $sourceSansProStack;
+	color: $cLaborText;
+	background: url('#{ $imgPath }banner.jpg') repeat-x left top, $cMainBackground;
+}
+
+a{
+    color: $cLink;
+    text-decoration: none;
+    &:hover {
+        //
+    }
+}
