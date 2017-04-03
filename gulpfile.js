@@ -54,7 +54,7 @@ var sSrc = "src/",
     },
     oBrowserSync = {
         initOpts: {
-            proxy: "http://localhost/DW-Projects/csszg/" + sDest
+            proxy: "http://homestead.app/DW-Projects/csszg/" + sDest
         }
     };
 

@@ -1,18 +1,103 @@
 // Global fonts variables
 
 // Variables
-$sourceSansProStack: "Source Sans Pro", Helvetica, Arial, sans-serif;
+$sourceSansProStack: "SourceSansPro", Helvetica, Arial, sans-serif;
 $avenidaStack: "AvenidaW01", Arial, sans-serif;
 
 // Avenida
 @font-face {
     font-family: 'AvenidaW01';
-    src: url('#{ $fontPath }avenida/AvenidaW01.eot');
-    src: url('#{ $fontPath }avenida/AvenidaW01.eot?#iefix') format('embedded-opentype'),
-         url('#{ $fontPath }avenida/AvenidaW01.woff2') format('woff2'),
-         url('#{ $fontPath }avenida/AvenidaW01.woff') format('woff'),
-         url('#{ $fontPath }avenida/AvenidaW01.ttf') format('truetype'),
-         url('#{ $fontPath }avenida/AvenidaW01.svg#AvenidaW01') format('svg');
-    font-weight: normal;
+    src: url('#{ $fontPath }Avenida/AvenidaW01.eot');
+    src: url('#{ $fontPath }Avenida/AvenidaW01.eot?#iefix') format('embedded-opentype'),
+         url('#{ $fontPath }Avenida/AvenidaW01.woff2') format('woff2'),
+         url('#{ $fontPath }Avenida/AvenidaW01.woff') format('woff'),
+         url('#{ $fontPath }Avenida/AvenidaW01.ttf') format('truetype'),
+         url('#{ $fontPath }Avenida/AvenidaW01.svg#AvenidaW01') format('svg');
+    font-weight: 400;
     font-style: normal;
+}
+
+// Source Sans Pro
+@font-face {
+    font-family: 'SourceSansPro';
+    src: url('#{ $fontPath }SourceSansPro/SourceSansPro-ExtraLight.otf') format('truetype');
+    font-weight: 100;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'SourceSansPro';
+    src: url('#{ $fontPath }SourceSansPro/SourceSansPro-ExtraLightIt.otf') format('truetype');
+    font-weight: 100;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'SourceSansPro';
+    src: url('#{ $fontPath }SourceSansPro/SourceSansPro-Light.otf') format('truetype');
+    font-weight: 200;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'SourceSansPro';
+    src: url('#{ $fontPath }SourceSansPro/SourceSansPro-LightIt.otf') format('truetype');
+    font-weight: 200;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'SourceSansPro';
+    src: url('#{ $fontPath }SourceSansPro/SourceSansPro-Regular.otf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'SourceSansPro';
+    src: url('#{ $fontPath }SourceSansPro/SourceSansPro-It.otf') format('truetype');
+    font-weight: 400;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'SourceSansPro';
+    src: url('#{ $fontPath }SourceSansPro/SourceSansPro-Semibold.otf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'SourceSansPro';
+    src: url('#{ $fontPath }SourceSansPro/SourceSansPro-SemiboldIt.otf') format('truetype');
+    font-weight: 600;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'SourceSansPro';
+    src: url('#{ $fontPath }SourceSansPro/SourceSansPro-Bold.otf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'SourceSansPro';
+    src: url('#{ $fontPath }SourceSansPro/SourceSansPro-BoldIt.otf') format('truetype');
+    font-weight: 700;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'SourceSansPro';
+    src: url('#{ $fontPath }SourceSansPro/SourceSansPro-Black.otf') format('truetype');
+    font-weight: 800;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'SourceSansPro';
+    src: url('#{ $fontPath }SourceSansPro/SourceSansPro-BlackIt.otf') format('truetype');
+    font-weight: 800;
+    font-style: italic;
 }
