@@ -5,3 +5,112 @@ body{
 	max-width: $desktopMainMaxSize;
 	margin: 0 auto;
 }
+
+.page-wrapper{
+	position: relative;
+}
+
+.summary{
+	width: 10em;
+	position: absolute;
+	top: 15.25em;
+	left: 80px;
+	padding: 1.5em;
+	display: inline-block;
+}
+
+.preamble, .explanation, .participation, .benefits, .requirements{
+	margin-bottom: 7em;
+    margin-right: 19.5em;
+	max-width: 40rem;
+}
+
+.supporting{
+	margin-bottom: 2rem;
+	margin-right: 23em;
+	margin-left: 80px;
+}
+
+.preamble{
+    margin-top: 7em;
+    margin-right: 23em;
+	margin-left: 23em;
+}
+
+.sidebar{
+	margin: 0 80px;
+	position: absolute;
+	top: 23em;
+	right: 0;
+}
+
+footer{
+    width: 100%;
+	margin-bottom: 5rem;
+	position: absolute;
+	left: 0;
+}
+
+@media(max-width: $mFirstReduce){
+	.sidebar{
+		position: relative;
+		top: 0;
+		text-align: left;
+	}
+
+	.preamble{
+		margin-right: 80px;
+	}
+
+	.supporting{
+		margin-bottom: 0;
+		margin-right: 80px;
+	}
+
+	body{
+		position: relative;
+		padding-bottom: 80px;
+	}
+
+	.page-wrapper{
+		position: inherit;
+	}
+
+	footer{
+		bottom: -10rem;
+	}
+}
+
+@media(max-width: $mSecondReduce){
+	.sidebar{
+		left: 15%;
+		margin: 0 0;
+	}
+}
+
+@media(max-width: $mThirdReduce){
+	.page-wrapper{
+		margin: 10%;
+	}
+
+	.summary {
+		width: auto;
+		position: inherit;
+		top: auto;
+		left: auto;
+		margin: 0 2em;
+	}
+
+	.supporting{
+		margin: 0;
+	}
+
+	.preamble, .explanation, .participation, .benefits, .requirements{
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	.sidebar{
+		left: 0;
+	}
+}

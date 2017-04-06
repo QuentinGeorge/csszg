@@ -1,0 +1,87 @@
+// Sidebar specific styles
+
+.sidebar{
+	text-align: right;
+	text-shadow: 2px 2px 2px $cMainBackground;
+}
+
+.design-name{
+	display: block;
+}
+
+.designer-name{
+	border-bottom: 1px solid $cLink;
+}
+
+.design-selection, .design-archives, .zen-resources{
+	width: 13rem;
+	margin-bottom: 2.5em;
+}
+
+.design-selection nav li{
+	margin-bottom: 0.4em;
+}
+
+@media(max-width: $mFirstReduce){
+	.design-selection{
+		width: 50%;
+	}
+
+	.design-archives, .zen-resources{
+		width: 20%;
+	}
+
+	.design-selection, .design-archives, .zen-resources{
+		float: left;
+	}
+
+	.sidebar .wrapper:after {
+		content: "";
+		display: block;
+		clear: both;
+		visibility: hidden;
+	}
+
+	.design-selection, .design-archives{
+		margin-right: 5%;
+	}
+
+	.design-selection nav{
+		columns: 2;
+	}
+}
+
+@media(max-width: $mSecondReduce){
+	.zen-resources{
+		float: none;
+	}
+}
+
+@media(max-width: $mThirdReduce){
+	.sidebar{
+		text-align: center;
+	}
+
+	.design-selection{
+		float: none;
+		margin-left: auto;
+		margin-right: auto;
+		max-width: 25em;
+		padding-left: 2.5rem;
+	}
+
+	.design-selection, .design-archives, .zen-resources{
+		width: auto;
+		text-align: left;
+	}
+
+	.design-archives, .zen-resources{
+		float: none;
+		display: inline-block;
+		vertical-align: top;
+	}
+
+	.design-archives{
+		margin-right: 6rem;
+	}
+}

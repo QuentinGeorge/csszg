@@ -1,0 +1,52 @@
+// Intro specific styles
+
+.intro header{
+	margin: 80px 80px 0 80px;
+	padding: 1.5em;
+	background-color: $cHeaderBackground;
+	color: $cHeaderTexte;
+	display: inline-block;
+	border-radius: 20px 20px 20px 0;
+	box-shadow: 0 0 50px -10px $cHeaderTexte,
+	0px 20px 90px 10px $cHeaderShadow inset;
+	position: relative;   /* Because .summary has a position value, if header haven't anyone, z-index doesn't work */
+	z-index: 2;
+}
+
+.intro::before{
+	content: url('#{ $imgPath }palmtrees.png');
+	position: absolute;
+	top: 30px;
+	left: 30em;
+}
+
+.summary{
+	text-align: left;
+	background-color: $cSummaryBackground;
+	color: $cHeaderTexte;
+	border-radius: 0 0 20px 20px;
+	box-shadow: 0 0 50px -10px $cHeaderTexte,
+	0px -20px 90px 10px $cHeaderShadow inset;
+	z-index: 1;
+}
+
+.summary a{
+	color: $cMainBackground;
+}
+
+@media(max-width: $mThirdReduce){
+	.intro::before{
+		display: none;
+	}
+
+	.intro header{
+		text-align: center;
+		margin: 0 auto;
+		display: block;
+		border-radius: 20px 20px 20px 20px;
+	}
+
+	.summary {
+		text-align: left;
+	}
+}

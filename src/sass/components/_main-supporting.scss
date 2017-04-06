@@ -1,0 +1,108 @@
+// Main-supporting specific styles
+
+.preamble, .explanation, .participation, .benefits, .requirements{
+	text-shadow: 2px 2px 2px $cMainBackground;
+}
+
+.supporting div:nth-child(2n){
+	margin-left: 17.5em;  /* 23em - 3.5 */
+	margin-right: 0;
+}
+
+.preamble h3{
+	position: relative;
+	display: inline;
+	margin-right: 120px;
+
+}
+
+.preamble h3:after{
+	content: url('#{ $imgPath }van.png');
+	display: inline-block;
+	position: absolute;
+	bottom: 0.2em;
+	right: -120px;
+}
+
+.preamble p:first-of-type {
+	padding-top: 1.25rem;
+}
+
+.explanation h3{
+	position: relative;
+	display: inline-block;
+	margin-left: 70px;
+
+}
+
+.explanation h3:before{
+	content: url('#{ $imgPath }surfing.svg');
+	width: 100px;
+	display: inline-block;
+	position: absolute;
+	bottom: 0.2em;
+	left: -70px;
+}
+
+.participation h3{
+	position: relative;
+	display: inline;
+	margin-right: 140px;
+
+}
+
+.participation h3:after{
+	content: url('#{ $imgPath }shark.svg');
+	width: 140px;
+	display: inline-block;
+	position: absolute;
+	bottom: -0.1em;
+	right: -140px;
+}
+
+.participation p:first-of-type {
+	padding-top: 1.25rem;
+}
+
+.benefits h3{
+	position: relative;
+	display: inline-block;
+	margin-left: 160px;
+
+}
+
+.benefits h3:before{
+	content: url('#{ $imgPath }orca.svg');
+	width: 150px;
+	display: inline-block;
+	position: absolute;
+	bottom: 0;
+	left: -160px;
+}
+
+.requirements h3{
+	position: relative;
+	display: inline;
+	margin-right: 180px;
+
+}
+
+.requirements h3:after{
+	content: url('#{ $imgPath }sailing.svg');
+	width: 160px;
+	display: inline-block;
+	position: absolute;
+	bottom: 0.5em;
+	right: -180px;
+}
+
+.requirements p:first-of-type{
+	padding-top: 1.25rem;
+}
+
+@media(max-width: $mThirdReduce){
+	.supporting div:nth-child(2n){
+		margin-left: auto;
+		margin-right: auto;
+	}
+}

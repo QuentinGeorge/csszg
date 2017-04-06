@@ -1,0 +1,9 @@
+// Footer specific styles
+
+footer{
+	text-align: center;
+}
+
+footer a:not(:first-child){
+	padding-left: 1em;
+}
