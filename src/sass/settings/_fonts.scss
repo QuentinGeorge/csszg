@@ -7,12 +7,12 @@ $avenidaStack: "AvenidaW01", Arial, sans-serif;
 // Avenida
 @font-face {
     font-family: 'AvenidaW01';
-    src: url('#{ $fontPath }Avenida/AvenidaW01.eot');
-    src: url('#{ $fontPath }Avenida/AvenidaW01.eot?#iefix') format('embedded-opentype'),
-         url('#{ $fontPath }Avenida/AvenidaW01.woff2') format('woff2'),
-         url('#{ $fontPath }Avenida/AvenidaW01.woff') format('woff'),
-         url('#{ $fontPath }Avenida/AvenidaW01.ttf') format('truetype'),
-         url('#{ $fontPath }Avenida/AvenidaW01.svg#AvenidaW01') format('svg');
+    src: url('#{ $fontPath }avenida/AvenidaW01.eot');
+    src: url('#{ $fontPath }avenida/AvenidaW01.eot?#iefix') format('embedded-opentype'),
+         url('#{ $fontPath }avenida/AvenidaW01.woff2') format('woff2'),
+         url('#{ $fontPath }avenida/AvenidaW01.woff') format('woff'),
+         url('#{ $fontPath }avenida/AvenidaW01.ttf') format('truetype'),
+         url('#{ $fontPath }avenida/AvenidaW01.svg#AvenidaW01') format('svg');
     font-weight: 400;
     font-style: normal;
 }
