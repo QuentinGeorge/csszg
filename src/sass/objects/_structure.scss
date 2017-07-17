@@ -1,8 +1,8 @@
 // Structure elements
 
 body{
-    min-width: $desktopMainMinSize;
-	max-width: $desktopMainMaxSize;
+    min-width: $mMainMinSize;
+	max-width: $mMainMaxSize;
 	margin: 0 auto;
 }
 
@@ -120,5 +120,11 @@ footer{
 
     footer{
 		bottom: -10rem;
+	}
+}
+
+@media(max-width: $mFourthReduce){
+    footer{
+		bottom: -15rem;
 	}
 }

@@ -20,7 +20,8 @@ h1, h2, h3{
 
 h1{
 	font-size: 6em;
-	line-height: 0.9em;
+	line-height: 0.8em;
+	margin-bottom: 0.1em;
 }
 
 h2{
@@ -41,9 +42,24 @@ p{
 }
 
 abbr{
+	text-decoration: none;  // prevent underline decoration on browsers like chrome
 	border-bottom: 1px dotted $cLink;
 }
 
 a abbr, h2 abbr{
 	border-bottom: none;
+}
+
+@media(max-width: $mFourthReduce){
+	h1{
+        font-size: 4rem;
+    }
+
+    h2{
+        font-size: 2.5rem;
+    }
+
+    h3{
+        font-size: 2rem;
+    }
 }

@@ -105,3 +105,27 @@
 		margin-right: 6rem;
 	}
 }
+
+@media(max-width: $mFourthReduce){
+	.design-selection .design-name, .design-archives ul, .zen-resources ul{
+        font-size: 1rem;
+    }
+
+	.design-selection{
+		margin-left: inherit;
+		margin-right: inherit;
+		padding-left: 0;
+	}
+
+	.design-selection nav{
+		columns: inherit;
+	}
+
+	.design-selection nav li{
+		display: block;
+	}
+
+	.design-archives, .zen-resources{
+		display: block;
+	}
+}
