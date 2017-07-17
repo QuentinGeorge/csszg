@@ -86,6 +86,10 @@ footer{
 		left: 15%;
 		margin: 0 0;
 	}
+
+    footer{
+		bottom: -15rem;
+	}
 }
 
 @media(max-width: $mThirdReduce){
@@ -112,5 +116,9 @@ footer{
 
 	.sidebar{
 		left: 0;
+	}
+
+    footer{
+		bottom: -10rem;
 	}
 }

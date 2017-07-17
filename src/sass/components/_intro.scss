@@ -31,7 +31,18 @@
 }
 
 .summary a{
-	color: $cMainBackground;
+	color: $cLinkSummary;
+	&:hover {
+        color: $cLinkSummaryHover;
+    }
+}
+
+.summary p{
+	margin-top: 0;
+}
+
+.summary p:last-of-type{
+	margin-bottom: 0;
 }
 
 @media(max-width: $mThirdReduce){

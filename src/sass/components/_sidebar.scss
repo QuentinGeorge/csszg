@@ -5,21 +5,41 @@
 	text-shadow: 2px 2px 2px $cMainBackground;
 }
 
-.design-name{
+.sidebar h3 {
+	padding-bottom: 0.7em;  // 28px like the space between h3 in main-supporting
+}
+
+.design-name, .design-archives ul a, .zen-resources ul a{
 	display: block;
 }
 
 .designer-name{
+	text-transform: uppercase;
 	border-bottom: 1px solid $cLink;
+	&:hover {
+        border-bottom: 1px solid $cLinkHover;
+    }
+}
+
+.design-selection .design-name, .design-archives ul, .zen-resources ul{
+	font-size: 1.25rem;
 }
 
 .design-selection, .design-archives, .zen-resources{
 	width: 13rem;
-	margin-bottom: 2.5em;
+	margin-bottom: 3.5em;
 }
 
 .design-selection nav li{
-	margin-bottom: 0.4em;
+	display: inline-block;
+}
+
+.design-selection ul li{
+	margin-bottom: 1.25rem;
+}
+
+.design-archives ul li, .zen-resources ul li{
+	margin-bottom: 0.5rem;
 }
 
 @media(max-width: $mFirstReduce){

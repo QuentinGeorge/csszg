@@ -9,6 +9,9 @@ $cSummaryBackground: lighten($cHeaderBackground, 5%);
 $cLaborText: #FFFFFF;
 $cHeaderTexte: #512715;
 $cLink: #00E6FF;
+$cLinkHover: lighten( $cLink, 25% );
+$cLinkSummary: $cMainBackground;
+$cLinkSummaryHover: lighten( $cLinkSummary, 15% );
 
 // Borders colors
 
